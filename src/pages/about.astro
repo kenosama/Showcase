@@ -1,0 +1,35 @@
+---
+//library import
+import { Image } from "@astrojs/image/components";
+// component imports
+import Link from "../components/Link.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout title="About Me" description="My About Page">
+  <section class="container about" aria-label="About Me">
+    <Image 
+      src="/images/Headshot.jpg" 
+      alt="My headshot"
+      width="400"
+      height="330"
+       />
+      <div class="content">
+        <h1 class="h1"> About Me</h1>
+        <p>
+          Motivated and driven individual with a strong background in sales and store management, now pursuing a career in web development.
+        </p>
+        <p>
+        With a passion for working with computers and a basic understanding of designand photo modification gained through a course in Desktop Publishing.
+        </p>
+        <p>
+        I am eager to expand my skills and knowledge. My experience at Becode has provided me with practical experience in web development, and I am excited to continue building my expertise in this field.
+        </p>
+        <Link 
+          href="mailto:t.canomorant@icloud.com"
+          style="primary"
+          text="Contact Me"
+          />
+      </div>
+  </section>
+</MainLayout>

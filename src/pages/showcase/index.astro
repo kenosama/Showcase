@@ -1,0 +1,23 @@
+---
+// component imports
+import PostCard from "../../components/PostCard.astro";
+import MainLayout from "../../layouts/MainLayout.astro";
+const allPosts = await Astro.glob("./*.md");
+---
+
+<MainLayout title="Thomas Cano Morant's Showcase">
+  <section class="container" aria-label="Showcase Post">
+    <h1 class="h1">Latest Showcase Posts</h1>
+    <div class="post-container">
+      {
+        allPosts.map((post) => (
+          <PostCard
+            frontmatter={post.frontmatter}
+            url={post.url}
+            TagType="h2"
+          />
+        ))
+      }
+    </div>
+  </section>
+</MainLayout>

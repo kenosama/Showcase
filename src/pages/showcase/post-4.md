@@ -8,7 +8,7 @@ image: {
   alt: "A picture of a coder",
 }
 description: The global css file for this site is a bit different than I’d write things normally, but I’m trying to keep you from having to write a bunch of random classes.
-draft: false
+draft: true
 category: CSS
 ---
 

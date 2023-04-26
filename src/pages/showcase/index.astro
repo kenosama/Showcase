@@ -2,7 +2,20 @@
 // component imports
 import PostCard from "../../components/PostCard.astro";
 import MainLayout from "../../layouts/MainLayout.astro";
+
+//utilities imports
+import {formatShowcasePost} from '../../js/utils'
+
 const allPosts = await Astro.glob("./*.md");
+
+const formattedPost = formatShowcasePost(allPosts,
+//  { 
+//     filterOutDrafts: true,
+//     filterOutFuturePost: true,
+//     sortByDate: true,
+//     limit: 50
+//     }
+    );
 ---
 
 <MainLayout title="Thomas Cano Morant's Showcase">
@@ -10,7 +23,7 @@ const allPosts = await Astro.glob("./*.md");
     <h1 class="h1">Latest Showcase Posts</h1>
     <div class="post-container">
       {
-        allPosts.map((post) => (
+        formattedPost.map((post) => (
           <PostCard
             frontmatter={post.frontmatter}
             url={post.url}

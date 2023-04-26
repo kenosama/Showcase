@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/ShowcasePostLayout.astro"
 title: Building an Astro Post Tag Component
-date: 2022-12-06
+date: 2023-12-06
 author: Anna Dixon
 image: {
   src: "/images/post-6.jpg",

@@ -4,66 +4,44 @@ import MainLayout from "../layouts/MainLayout.astro";
 import PostCard from "../components/PostCard.astro";
 import Link from "../components/Link.astro";
 
-//library import 
-import Image from "@astrojs/image/components/Image.astro";
+// utils imports
+import { formatBlogPosts } from "../js/utils";
 
-//utilities imports
-import {formatShowcasePost} from '../js/utils.js';
-
-
-const allPosts = await Astro.glob("./showcase/*.md");
-
-const formattedPost = formatShowcasePost(allPosts,
- { 
-    filterOutDrafts: true,
-    filterOutFuturePost: true,
-    sortByDate: true,
-    limit: 3,
-    }
-    );
-
+const allPosts = await Astro.glob("./blog/*.md");
+const formattedPosts = formatBlogPosts(allPosts, {
+  limit: 3,
+});
 ---
 
-<MainLayout title="Thomas Cano Morant's Showcase">
+<MainLayout title="My Blog">
   <section class="container about" aria-label="About Me">
     <img
-      src="/images/Headshot.jpg" 
+      src="/images/headshot.jpg"
       alt="My headshot"
-      width="330"
+      width="200"
       height="330"
-       />
-      <div class="content">
-        <h1 class="h1"> About Me</h1>
-        <p>
-          Motivated and driven individual with a strong background in sales and store management, now pursuing a career in web development.
-        </p>
-        <p>
-        With a passion for working with computers and a basic understanding of designand photo modification gained through a course in Desktop Publishing.
-        </p>
-        <p>
-        I am eager to expand my skills and knowledge. My experience at Becode has provided me with practical experience in web development, and I am excited to continue building my expertise in this field.
-        </p>
-        <Link
-          href="/about/"
-          style="secondary"
-          text="👋 About me"
-          />
-      </div>
+    />
+    <div class="content">
+      <h1 class="h1">My Blog</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quidem
+        tempora beatae mollitia architecto optio sapiente repellendus natus.
+      </p>
+      <Link href="/about/" style="secondary" text="👋 About Me" />
+    </div>
   </section>
-
-  <section class="container" aria-label="Showcase Post">
-    <h1 class="h1">Latest Showcase Posts</h1>
+  <section class="container" aria-label="New Blog Posts">
+    <h2 class="h1">New Blog Posts</h2>
     <div class="post-container">
       {
-        formattedPost.map((post) => (
+        formattedPosts.map((post) => (
           <PostCard
             frontmatter={post.frontmatter}
             url={post.url}
-            TagType="h3"
+            tagType="h3"
           />
         ))
       }
     </div>
   </section>
 </MainLayout>
-

@@ -1,35 +1,31 @@
 ---
-//library import
-import { Image } from "@astrojs/image/components";
 // component imports
 import Link from "../components/Link.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout title="About Me" description="My About Page">
+<MainLayout title="About" description="My About Page">
   <section class="container about" aria-label="About Me">
-    <Image 
-      src="/images/Headshot.jpg" 
+    <img
+      src="/images/headshot.jpg"
       alt="My headshot"
-      width="400"
+      width="200"
       height="330"
-       />
-      <div class="content">
-        <h1 class="h1"> About Me</h1>
-        <p>
-          Motivated and driven individual with a strong background in sales and store management, now pursuing a career in web development.
-        </p>
-        <p>
-        With a passion for working with computers and a basic understanding of designand photo modification gained through a course in Desktop Publishing.
-        </p>
-        <p>
-        I am eager to expand my skills and knowledge. My experience at Becode has provided me with practical experience in web development, and I am excited to continue building my expertise in this field.
-        </p>
-        <Link 
-          href="mailto:t.canomorant@icloud.com"
-          style="primary"
-          text="Contact Me"
-          />
-      </div>
+    />
+    <div class="content">
+      <h1 class="h1">My Blog</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quidem
+        tempora beatae mollitia architecto optio sapiente repellendus natus.
+        Minima reiciendis voluptatibus ratione quos exercitationem expedita
+        commodi doloremque. Repellendus nulla nihil animi fuga voluptas amet
+        fugit eveniet voluptates ab labore. Magnam.
+      </p>
+      <Link
+        href="mailto:chris@codinginpublic.dev"
+        style="primary"
+        text="Contact Me"
+      />
+    </div>
   </section>
 </MainLayout>

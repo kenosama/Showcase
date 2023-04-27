@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/08748412-d2cd-44bd-8f1a-6d17baa3cf35/deploy-status)](https://app.netlify.com/sites/kenosama-showcase/deploys)
+
 ## About this project
 A Web Developer needs a presence online and this project allows me to make one, instead of making a basic site, i chose to make a project with [Astro](https://astro.build/), which allows me to update easily the site afterwards. 
 

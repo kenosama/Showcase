@@ -11,6 +11,8 @@ const allPosts = await Astro.glob("./blog/*.md");
 const formattedPosts = formatBlogPosts(allPosts, {
   limit: 3,
 });
+
+
 ---
 
 <MainLayout title="My Blog">

@@ -7,6 +7,7 @@ import Link from "./Link.astro";
 
 // data imports
 import navData from "../data/navData";
+import { list } from "postcss";
 ---
 
 <nav aria-label="Primary">
@@ -17,13 +18,15 @@ import navData from "../data/navData";
     <ul>
       {
         navData.map((item) => (
-          <Link
+        <li>  
+        <Link
             text={item.name}
             href={item.path}
             style="primary"
             isFilled={false}
             data-navLink
           />
+        </li>
         ))
       }
     </ul>

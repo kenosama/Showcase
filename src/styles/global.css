@@ -290,11 +290,11 @@ button {
     width: var(--fs-md);
   }
 
-  & .primary {
+  &.primary {
     --type: hsl(var(--txt));
   }
 
-  & .secondary {
+  &.secondary {
     --type: hsl(var(--accent));
     color: hsl(var(--txt));
   }

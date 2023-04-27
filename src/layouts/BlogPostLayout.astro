@@ -7,9 +7,10 @@ import RelatedPosts from "../components/RelatedPosts.astro";
 
 // util imports
 import { formatBlogPosts } from "../js/utils";
+import Link from "../components/Link.astro";
 
 const { frontmatter } = Astro.props;
-const { title, description, date, category, author, image } = frontmatter;
+const { title, description, date, category, author, image, github } = frontmatter;
 
 const allPosts = await Astro.glob("../pages/blog/*.md");
 const formattedPosts = formatBlogPosts(allPosts, {
@@ -29,6 +30,15 @@ const relatedPosts = formattedPosts
   <div class="post-content">
     <div class="content">
       <slot />
+      <Link
+    href= {frontmatter.github}
+    style="primary"
+    text="See the repository on "
+    icon={{
+      name:"grommet-icons:github",
+      side: "right"
+    }}
+  />
     </div>
     <div class="sidebar">
       <aside class="container" aria-label="Blog categories">

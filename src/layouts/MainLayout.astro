@@ -8,13 +8,16 @@ import Nav from "../components/Nav.astro";
 import "../styles/global.css";
 
 const {
-  title = "My Astro Blog",
-  description = "My musings about the Astro framework",
+  title = "Thomas Cano Morant Showcase",
+  description = "A little Showcase of my work so far",
+  image,
+  frontmatter,
+  robots
 } = Astro.props;
 ---
 
 <html lang="en">
-  <MainHead {title} {description} />
+  <MainHead {title} {description} {image} {frontmatter} {robots} />
   <body>
     <Nav />
     <main>

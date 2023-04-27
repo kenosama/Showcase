@@ -226,6 +226,10 @@ p {
   max-width: var(--content-lg);
 }
 
+.italic {
+  font-style: italic;
+}
+
 small {
   font-size: var(--fs-sm);
 }
@@ -257,7 +261,7 @@ button {
 .link {
   --type: transparent;
   --fill: transparent;
-  display: flex;
+  display: inline-block;
   place-items: center;
   gap: var(--space-2xs);
   width: fit-content;
@@ -694,4 +698,9 @@ header {
 
 .bar.expert::before {
   width: calc(100% - 10px);
+}
+
+/* specific css  */
+.links {
+  display: inline-block;
 }

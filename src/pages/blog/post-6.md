@@ -1,8 +1,8 @@
 ---
 layout: "../../layouts/BlogPostLayout.astro"
-title: Building an Astro Post Tag Component
-date: 2022-12-03
-author: Anna Dixon
+title: Portfolio
+date: 2023-04-27
+author: Thomas Cano Morant
 image: {
   src: "/images/post-6.jpg",
   alt: "A picture of a coder",

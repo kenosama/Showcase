@@ -15,14 +15,13 @@ import MainLayout from "../layouts/MainLayout.astro";
     <div class="content">
       <h1 class="h1">Thomas Cano Morant</h1>
 
-      <h2 class="h2">More about me</h2>
       <p>
         Motivated and driven individual with a strong background in sales and
         store management, now pursuing a career in web development.
       </p>
       <p>
         With a passion for working with computers and a basic understanding of
-        designand photo modification gained through a course in Desktop
+        design and photo modification gained through a course in Desktop
         Publishing.
       </p>
       <p>
@@ -34,12 +33,62 @@ import MainLayout from "../layouts/MainLayout.astro";
   </section>
   <section class="container about" aria-label="About Me">
     <div class="content">
+        
       <h2 class="h2">Education</h2>
+      <article>
+      <h3 class="h3">
+        Full Stack Web Developer Dec 2022 - Jul 2023 <span class="italic"><a href="https://becode.org/"> Becode</a></span>, Ghent
+      </h3>
+      <p class="italic">
+        -Learning Front & Back-end skills through practical cases.
+      </p>
+      </article>
+      <article>
+      <h3 class="h3">
+        Desktop publishing Sep 2005 - Jun 2006 <span class="italic">CEPEGRA</span>, Court-Saint-Etienne
+      </h3>
+      <p class="italic">
+        -learning desktop publishing, Photoshop, Illustrator, inDesign, QarkXpress.
+      </p>
+      </article>
+      <article>
+      <h3 class="h3">
+        HMO in IT-transitional technical education <br>Sep 2002 - Jul 2003 <br><span class="italic">Athénée Royal de Gembloux</span>, Gembloux
+      </h3>
+      <p class="italic">
+        -learning programming logic, software creation, network infrastructure.
+      </p>
+      </article>
     </div>
   </section>
   <section class="container about" aria-label="About Me">
     <div class="content">
-      <h2 class="h2">Experiences</h2>
+      <h2 class="h2">Employement</h2>
+      <article>
+      <h3 class="h3">
+        Sales Bedroom Solutions Nov 2017 - Nov 2022 <span class="italic">IKEA</span>, Ghent
+      </h3>
+      <p class="italic">
+        -B2C, setting up the department, training of the new colleagues.
+      </p>
+      </article>
+      <article>
+      <h3 class="h3">
+        Store Manager APR (Dansaert) 2009 - 2016 <br><span class="italic">Mac Line / Easy-m</span>, Brussels
+      </h3>
+      <p class="italic">
+        -B2B, B2C, inventory management, workforce management, organization of in store events.
+      </p>
+      </article>
+      <article>
+      <h3 class="h3">
+        Sales Photography 2006 - 2009 <span class="italic">Media-Markt</span>, Brussels
+      </h3>
+      <p class="italic">
+        -B2C, Photographic skills training, customer management, supplier order management. 
+        <br> -EHBO and fire training.
+      </p>
+      </article>
     </div>
   </section>
   <section class="container about" aria-label="About Me">
@@ -53,10 +102,28 @@ import MainLayout from "../layouts/MainLayout.astro";
       <div class="bar front expert" data-skill="HTML5"></div>
     </div>
   </section>
-
-  <Link
-    href="mailto:chris@codinginpublic.dev"
+  <section class="container about">
+    <div>
+    <Link
+    href="/documents/Thomas_Cano_Morant_Resume_2023.pdf"
     style="primary"
-    text="Contact Me"
+    text="Download my Resume"
+    icon={{
+      name:"tabler:notes",
+      side: "right"
+    }}
+  /> &nbsp;
+    <Link
+    href="mailto:t.canomorant@icloud.com"
+    style="primary"
+    text="Contact me"
+    icon={{
+      name:"tabler:mail",
+      side: "right"
+    }}
   />
+  </div>
+  </section>
+
+  
 </MainLayout>

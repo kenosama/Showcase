@@ -2,23 +2,22 @@
 // component imports
 import MainLayout from "../../layouts/MainLayout.astro";
 import PostCard from "../../components/PostCard.astro";
-import Pagination from "../../components/Pagination.astro";
 import CategoryCloud from "../../components/CategoryCloud.astro";
+import Pagination from "../../components/Pagination.astro";
 
 // utils imports
 import { formatBlogPosts } from "../../js/utils";
 
+export async function getStaticPaths({ paginate }) {
+  const allPosts = await Astro.glob("./*.md");
+  const formattedPosts = formatBlogPosts(allPosts);
 
-
-export async function getStaticPaths({paginate}){
-const allPosts = await Astro.glob("./*.md");
-const formattedPosts = formatBlogPosts(allPosts);
-return paginate(formattedPosts,{
-  pageSize: 5,
-})
+  return paginate(formattedPosts, {
+    pageSize: 3,
+  });
 }
-const {page}= Astro.props;
-console.log(page);
+
+const { page } = Astro.props;
 ---
 
 <MainLayout title="My Blog">
@@ -35,10 +34,10 @@ console.log(page);
         ))
       }
     </div>
-    <Pagination prevUrl={page.url.prev} nextUrl={page.url.next}/>
+    <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
   </section>
   <aside class="container" aria-label="Blog categories">
-    <h2 class="h3"> Blog Categories</h2>
-    <CategoryCloud showCount={true} />
+    <h2 class="h3">Blog Categories</h2>
+    <CategoryCloud showCount={true}/>
   </aside>
 </MainLayout>

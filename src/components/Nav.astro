@@ -19,10 +19,13 @@ import { list } from "postcss";
       {
         navData.map((item) => (
         <li>  
-        <a href={item.path}
-            class="primary"
+         <Link
+            text={item.name}
+            href={item.path}
+            style="primary"
+            isFilled={false}
             data-navLink
-            >{item.name} </a>
+          />
         </li>
         ))
       }

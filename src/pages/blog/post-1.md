@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/BlogPostLayout.astro"
 title: The Agency - Laravel and Beyond
-date: 2022-04-19
+date: 2023-04-19
 author: Thomas Cano Morant
 image: {
   src: "/images/the_agency.jpg",

@@ -23,3 +23,6 @@ pnpm-debug.log*
 
 #postCSS config file
 postcss.config.cjs
+
+#Template Files
+*.psd

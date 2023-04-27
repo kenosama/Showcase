@@ -317,6 +317,9 @@ button {
   }
 }
 
+.italic{
+  font-style: italic;
+}
 
 ::selection {
   background: hsl(var(--accent) / .85);

@@ -6,8 +6,12 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astro-blog.netltify.app',
-  integrations: [mdx(), image({
-    serviceEntryPoint: '@astrojs/image/sharp'
-  }), sitemap()]
+  site: "https://kenosama-showcase.netlify.app",
+  integrations: [
+    mdx(),
+    image({
+      serviceEntryPoint: "@astrojs/image/sharp",
+    }),
+    sitemap(),
+  ],
 });

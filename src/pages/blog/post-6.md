@@ -7,7 +7,7 @@ image: {
   src: "/images/portfolio.jpg",
   alt: "The Astro Porfolio",
 }
-description: Project for my Portfolio made with Astro for fun and easiness.
+description: Project for my Portfolio made with Astro.
 draft: false
 category: Astro
 ---

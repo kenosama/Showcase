@@ -14,13 +14,16 @@ import navData from "../data/navData";
     <a href="/" class="logomark" aria-label="Go home">
       <Icon name="logomark" width="60" />
     </a>
-    <a>
+    <ul>
       {
         navData.map((item) => (
-          <a 
+          <Link
+            text={item.name}
             href={item.path}
-            class="link primary"
-            data-navLink> {item.name} </a>
+            style="primary"
+            isFilled={false}
+            data-navLink
+          />
         ))
       }
     </ul>

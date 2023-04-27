@@ -22,26 +22,28 @@ const formattedPosts = formatBlogPosts(allPosts, {
       height="330"
     />
     <div class="content">
-      <h1 class="h1">My Blog</h1>
+      <h1 class="h1">Thomas Cano Morant Showcase</h1>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quidem
-        tempora beatae mollitia architecto optio sapiente repellendus natus.
+        Motivated and driven individual with a strong background in sales and
+        store management, now pursuing a career in web development.
       </p>
-      <Link href="/about/" style="secondary" text="👋 About Me" />
+      <p>
+      I am eager to expand my skills and knowledge. My experience at Becode has provided
+      me with practical experience in web development, and I am excited to continue
+      building my expertise in this field.
+      </p>
     </div>
+    <Link href="/about/" style="secondary" text="👋 About Me" />
   </section>
   <section class="container" aria-label="New Blog Posts">
-    <h2 class="h1">New Blog Posts</h2>
-    <div class="post-container">
-      {
-        formattedPosts.map((post) => (
-          <PostCard
-            frontmatter={post.frontmatter}
-            url={post.url}
-            tagType="h3"
-          />
-        ))
-      }
-    </div>
-  </section>
+  <h2 class="h1">Latests Creations</h2>
+  <div class="post-container">
+    {
+      formattedPosts.map((post) => (
+        <PostCard frontmatter={post.frontmatter} url={post.url} tagType="h3" />
+      ))
+    }
+  </div>
+</section>
 </MainLayout>
+

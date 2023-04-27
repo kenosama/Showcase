@@ -19,7 +19,7 @@ This app simulates a real estate agency, the main goal was here to learn in dept
 - Using Bootstrap, 
 - File structure and git history,
 - Relationships between models,
-- basic logic system,
+- basic login system,
 - Routing,
 - Php artisan commands
 

@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/BlogPostLayout.astro"
-title: The Agency - Laravel and Beyond
+title: 
 date: 2022-11-20
 author: 
 image: {

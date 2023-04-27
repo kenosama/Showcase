@@ -12,7 +12,7 @@ draft: false
 category: Laravel
 ---
 ## The agency, Laravel and Beyond
-This app simulates a real estate agency, the main goal was here to learn in depth Laravel and his possibilities.
+This app simulates a real estate agency, the main goal was here to learn Laravel and it's possibilities.
 
 # what did i learn with it?
 - Working in a MVC environment,

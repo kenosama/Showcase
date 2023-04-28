@@ -30,17 +30,17 @@ const relatedPosts = formattedPosts
   <div class="post-content">
     <div class="content">
       <slot />
-      <Link
-    href= {frontmatter.github}
-    style="primary"
-    text="See the repository on "
-    icon={{
-      name:"grommet-icons:github",
-      side: "right"
-    }}
-  />
+          <Link
+        href= {frontmatter.github}
+        style="primary"
+        text="See the repository on "
+        icon={{
+          name:"grommet-icons:github",
+          side: "right"
+        }}
+      />
     </div>
-    <div class="sidebar">
+     <div class="sidebar">
       <aside class="container" aria-label="Blog categories">
         <h2 class="h3">Blog Categories</h2>
         <CategoryCloud />

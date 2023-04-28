@@ -8,7 +8,7 @@ image: {
   alt: "default",
 }
 description: blablabla
-draft: false
+draft: true
 category: Frontend
 github: https://github.com/kenosama/Showcase
 ---

@@ -1,14 +1,14 @@
 ---
 layout: "../../layouts/BlogPostLayout.astro"
-title: 
-date: 2023-11-20
+title: Becode Demo
+date: 2023-01-20
 author: Thomas Cano Morant
 image: {
-  src: "/images/",
-  alt: "",
+  src: "/images/image-default.jpg",
+  alt: "default",
 }
-description: 
-draft: true
+description: blablabla
+draft: false
 category: Frontend
 github: https://github.com/kenosama/Showcase
 ---

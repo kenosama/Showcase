@@ -1,4 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/08748412-d2cd-44bd-8f1a-6d17baa3cf35/deploy-status)](https://app.netlify.com/sites/kenosama-showcase/deploys)
+# thomas Cano Morant Showcase
 
 [![Image](public/images/portfolio.jpg)](https://kenosama-showcase.netlify.app/)
 

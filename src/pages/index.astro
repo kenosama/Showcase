@@ -3,6 +3,7 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import PostCard from "../components/PostCard.astro";
 import Link from "../components/Link.astro";
+import "../styles/anim.css"
 
 // utils imports
 import { formatBlogPosts } from "../js/utils";
@@ -26,13 +27,63 @@ const formattedPosts = formatBlogPosts(allPosts, {
     <div class="content">
       <h1 class="h1">Thomas Cano Morant Showcase</h1>
       <p>
-        Motivated and driven individual with a strong background in sales and
-        store management, now pursuing a career in web development.
+        <span>Motivated </span>
+        <span>and </span>
+        <span>driven </span>
+        <span>individual </span>
+        <span>with </span> 
+        <span>a </span> 
+        <span>strong </span>
+        <span>background </span>
+        <span>in </span>
+        <span>sales </span>
+        <span>and </span>
+        <span>store </span>
+        <span>management, </span>
+        <span>now </span>
+        <span>pursuing </span>
+        <span>a </span>
+        <span>career </span>
+        <span>in </span>
+        <span>web </span>
+        <span>development.</span>
       </p>
       <p>
-      I am eager to expand my skills and knowledge. My experience at Becode has provided
-      me with practical experience in web development, and I am excited to continue
-      building my expertise in this field.
+      
+      <span>I </span>
+      <span>am </span>
+      <span>eager </span>
+      <span>to </span>
+      <span>expand </span>
+      <span>my </span>
+      <span>skills </span>
+      <span>and </span>
+      <span>knowledge. </span>
+      <span>My </span>
+      <span>experience </span>
+      <span>at </span>
+      <span>Becode </span>
+      <span>has </span>
+      <span>provided </span>
+      <span>me </span>
+      <span>with </span>
+      <span>practical </span>
+      <span>experience </span>
+      <span>in </span>
+      <span>web </span>
+      <span>development, </span>
+      <span>and </span>
+      <span>I </span>
+      <span>am </span>
+      <span>excited </span>
+      <span>to </span>
+      <span>continue </span>
+      <span>building </span>
+      <span>my </span>
+      <span>expertise </span>
+      <span>in </span>
+      <span>this </span>
+      <span>field.</span>
       </p>
     </div>
     <Link href="/about/" style="secondary" text="👋 About Me" />
@@ -48,4 +99,3 @@ const formattedPosts = formatBlogPosts(allPosts, {
   </div>
 </section>
 </MainLayout>
-

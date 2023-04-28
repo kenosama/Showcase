@@ -3,7 +3,7 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import PostCard from "../components/PostCard.astro";
 import Link from "../components/Link.astro";
-import "../styles/anim.css"
+import "../styles/anim.css";
 
 // utils imports
 import { formatBlogPosts } from "../js/utils";
@@ -12,90 +12,93 @@ const allPosts = await Astro.glob("./blog/*.md");
 const formattedPosts = formatBlogPosts(allPosts, {
   limit: 3,
 });
-
-
 ---
 
 <MainLayout title="Thomas Cano Morant Showcase">
   <section class="container about" aria-label="About Me">
-    <img
-      src="/images/headshot.jpg"
-      alt="My headshot"
-      width="330"
-      height="330"
-    />
-    <div class="container">
-      <h1 class="h2">Thomas <br> Cano Morant <br> Junior Web Developer</h1>
+    <img src="/images/headshot.jpg" alt="My headshot" />
+    <h1 class="h1">Thomas <br /> Cano Morant <br /> Junior Web Developer</h1>
+  </section>
+  <section class="textBox">
+    <div></div>
+    <div class="content">
       <p>
-        <span>Motivated </span>
-        <span>and </span>
-        <span>driven </span>
-        <span>individual </span>
-        <span>with </span> 
-        <span>a </span> 
-        <span>strong </span>
-        <span>background </span>
-        <span>in </span>
-        <span>sales </span>
-        <span>and </span>
-        <span>store </span>
-        <span>management, </span>
-        <span>now </span>
-        <span>pursuing </span>
-        <span>a </span>
-        <span>career </span>
-        <span>in </span>
-        <span>web </span>
+        <span>Motivated</span>
+        <span>and</span>
+        <span>driven</span>
+        <span>individual</span>
+        <span>with</span>
+        <span>a</span>
+        <span>strong</span>
+        <span>background</span>
+        <span>in</span>
+        <span>sales</span>
+        <span>and</span>
+        <span>store</span>
+        <span>management,</span>
+        <span>now</span>
+        <span>pursuing</span>
+        <span>a</span>
+        <span>career</span>
+        <span>in</span>
+        <span>web</span>
         <span>development.</span>
       </p>
+      <br />
       <p>
-      
-      <span>I </span>
-      <span>am </span>
-      <span>eager </span>
-      <span>to </span>
-      <span>expand </span>
-      <span>my </span>
-      <span>skills </span>
-      <span>and </span>
-      <span>knowledge. </span>
-      <span>My </span>
-      <span>experience </span>
-      <span>at </span>
-      <span>Becode </span>
-      <span>has </span>
-      <span>provided </span>
-      <span>me </span>
-      <span>with </span>
-      <span>practical </span>
-      <span>experience </span>
-      <span>in </span>
-      <span>web </span>
-      <span>development, </span>
-      <span>and </span>
-      <span>I </span>
-      <span>am </span>
-      <span>excited </span>
-      <span>to </span>
-      <span>continue </span>
-      <span>building </span>
-      <span>my </span>
-      <span>expertise </span>
-      <span>in </span>
-      <span>this </span>
-      <span>field.</span>
+        <span>I</span>
+        <span>am</span>
+        <span>eager</span>
+        <span>to</span>
+        <span>expand</span>
+        <span>my</span>
+        <span>skills</span>
+        <span>and</span>
+        <span>knowledge.</span>
+        <span>My</span>
+        <span>experience</span>
+        <span>at</span>
+        <span>Becode</span>
+        <span>has</span>
+        <span>provided</span>
+        <span>me</span>
+        <span>with</span>
+        <span>practical</span>
+        <span>experience</span>
+        <span>in</span>
+        <span>web</span>
+        <span>development,</span>
+        <span>and</span>
+        <span>I</span>
+        <span>am</span>
+        <span>excited</span>
+        <span>to</span>
+        <span>continue</span>
+        <span>building</span>
+        <span>my</span>
+        <span>expertise</span>
+        <span>in</span>
+        <span>this</span>
+        <span>field.</span>
       </p>
+      <br />
+      <Link href="/about/" style="secondary" text="👋 About Me" />
     </div>
-    <Link href="/about/" style="secondary" text="👋 About Me" />
+    <div></div>
   </section>
+
   <section class="container" aria-label="New Blog Posts">
-  <h2 class="h1">Latest Creations</h2>
-  <div class="post-container">
-    {
-      formattedPosts.map((post) => (
-        <PostCard frontmatter={post.frontmatter} url={post.url} tagType="h3" />
-      ))
-    }
-  </div>
-</section>
+    <h2 class="h1">Latest Creations</h2>
+    <div class="post-container">
+      {
+        formattedPosts.map((post) => (
+          <PostCard
+            frontmatter={post.frontmatter}
+            url={post.url}
+            tagType="h3"
+          />
+        ))
+      }
+    </div>
+  </section>
 </MainLayout>

@@ -460,8 +460,8 @@ button:focus-visible {
 .about img {
   border-radius: 100vmax;
   border-radius: var(--radius-full);
-  height: 330px;
-  width: min(330px, 100%);
+  height: 400px;
+  width: min(300px, 100%);
   box-shadow: 0.2px 0.5px 0.6px #8186bb40, 1.1px 2.7px 3.3px -0.4px #8186bb40,
     2.1px 5px 6.1px -0.7px #8186bb40, 3.5px 8.3px 10.1px -1.1px #8186bb40,
     5.6px 13.2px 16.1px -1.4px #8186bb40, 8.7px 20.7px 25.3px -1.8px #8186bb40,
@@ -486,72 +486,6 @@ button:focus-visible {
   max-width: 45ch;
   max-width: var(--content-md);
 }
-/* textBox */
-.textBox {
-  display: grid;
-  gap: max(1.69rem, min(calc(1.32rem + 1.85vw), 2.75rem));
-  grid-gap: max(1.69rem, min(calc(1.32rem + 1.85vw), 2.75rem));
-  grid-gap: var(--space-lg);
-  gap: var(--space-lg);
-  align-items: center;
-  margin-top: max(2.25rem, min(calc(1.6rem + 3.26vw), 4.13rem));
-  margin-top: var(--space-md);
-  margin-bottom: max(2.25rem, min(calc(1.6rem + 3.26vw), 4.13rem));
-  margin-bottom: var(--space-md);
-}
-@media (min-width: 768px) {
-  .textBox {
-    grid-template-columns: 1fr 2fr 1fr;
-    align-content: center;
-    justify-content: center;
-    place-content: center;
-  }
-
-}
-
-.textBox .content {
-  display: grid;
-  gap: max(0.56rem, min(calc(0.39rem + 0.87vw), 1.06rem));
-  grid-gap: max(0.56rem, min(calc(0.39rem + 0.87vw), 1.06rem));
-  grid-gap: var(--space-xs);
-  gap: var(--space-xs);
-  max-width: 45ch;
-  max-width: var(--content-md);
-}
-/* Resume */
-.resume {
-  display: grid;
-  gap: max(1.69rem, min(calc(1.32rem + 1.85vw), 2.75rem));
-  grid-gap: max(1.69rem, min(calc(1.32rem + 1.85vw), 2.75rem));
-  grid-gap: var(--space-lg);
-  gap: var(--space-lg);
-  align-items: center;
-  margin-top: max(2.25rem, min(calc(1.6rem + 3.26vw), 4.13rem));
-  margin-top: var(--space-md);
-  margin-bottom: max(2.25rem, min(calc(1.6rem + 3.26vw), 4.13rem));
-  margin-bottom: var(--space-md);
-}
-@media (min-width: 768px) {
-  .resume {
-    grid-template-columns: 1fr 1fr;
-    align-content: center;
-    justify-content: center;
-    place-content: center;
-  }
-
-}
-
-.resume .content {
-  display: grid;
-  gap: max(0.56rem, min(calc(0.39rem + 0.87vw), 1.06rem));
-  grid-gap: max(0.56rem, min(calc(0.39rem + 0.87vw), 1.06rem));
-  grid-gap: var(--space-xs);
-  gap: var(--space-xs);
-  max-width: 45ch;
-  max-width: var(--content-md);
-}
-
-
 .post-container {
   margin-top: max(1.13rem, min(calc(0.8rem + 1.63vw), 2.06rem));
   margin-top: var(--space-md);
@@ -806,86 +740,4 @@ header .container {
 .sidebar [aria-label="Blog categories"] {
   margin-top: 0;
   margin-bottom: 0;
-}
-
-
-/* This is where the SkillBar begins */
-@keyframes load {
-  from {
-    width: 0%;
-  }
-}
-
-@-webkit-keyframes load {
-  from {
-    width: 0%;
-  }
-}
-
-@-moz-keyframes load {
-  from {
-    width: 0%;
-  }
-}
-
-@-o-keyframes load {
-  from {
-    width: 0%;
-  }
-}
-
-.bar {
-  background-color: var(--accent);
-  padding: 2px;
-  border-radius: 15px;
-  margin-bottom: 5px;
-  font-size: 14px;
-  color: #fff;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-.bar::before {
-  content: attr(data-skill);
-  background-color: #4a318f;
-  display: inline-block;
-  padding: 5px 0 5px 10px;
-  border-radius: inherit;
-  animation: load 2s 0s;
-  -webkit-animation: load 2s 0s;
-  -moz-animation: load 2s 0s;
-  -o-animation: load 2s 0s;
-}
-
-.bar.front::before {
-  background-color: #3b1ee0;
-}
-
-.bar.back::before {
-  background-color: #0b7bb4;
-}
-
-.bar.learning::before {
-  width: calc(20% - 10px);
-}
-
-.bar.basic::before {
-  width: calc(40% - 10px);
-}
-
-.bar.intermediate::before {
-  width: calc(60% - 10px);
-}
-
-.bar.advanced::before {
-  width: calc(80% - 10px);
-}
-
-.bar.expert::before {
-  width: calc(100% - 10px);
-}
-
-/* specific css  */
-.links {
-  display: inline-block;
 }

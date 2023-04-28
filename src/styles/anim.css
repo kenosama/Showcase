@@ -212,3 +212,8 @@ span:nth-child(50) {
     filter: blur(0);
   }
 }
+
+/* Image animations */
+
+.flip-in-diag-1-bl{-webkit-animation:flip-in-diag-1-bl .5s cubic-bezier(.25,.46,.45,.94) both;animation:flip-in-diag-1-bl .5s cubic-bezier(.25,.46,.45,.94) both}
+@-webkit-keyframes flip-in-diag-1-bl{0%{-webkit-transform:rotate3d(1,1,0,80deg);transform:rotate3d(1,1,0,80deg);opacity:0}100%{-webkit-transform:rotate3d(1,1,0,0deg);transform:rotate3d(1,1,0,0deg);opacity:1}}@keyframes flip-in-diag-1-bl{0%{-webkit-transform:rotate3d(1,1,0,80deg);transform:rotate3d(1,1,0,80deg);opacity:0}100%{-webkit-transform:rotate3d(1,1,0,0deg);transform:rotate3d(1,1,0,0deg);opacity:1}}

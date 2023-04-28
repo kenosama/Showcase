@@ -4,7 +4,7 @@ title: The CSS challenge
 date: 2023-01-06
 author: Thomas Cano Morant
 image: {
-  src: "/images/CSSChallenge.jpg",
+  src: "/images/CssChallenge.jpg",
   alt: "Css challenge images",
 }
 description: So we learn CSS, time to have a challenge of 3h.

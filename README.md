@@ -11,3 +11,6 @@ A Web Developer needs a presence online and this project allows me to make one, 
  - works with components,
  - allows to work with the commons framework and libraries,
  - allows some dynamic pagination,
+
+# what still to do
+- write a better readme to explain in depth the site.

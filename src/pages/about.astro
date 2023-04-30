@@ -100,16 +100,7 @@ import MainLayout from "../layouts/MainLayout.astro";
       <div class="bar front expert" data-skill="HTML5"></div>
     </div>
     <div>
-    <Link
-    href="/documents/Thomas_Cano_Morant_Resume_2023.pdf"
-    style="primary"
-    text="Download my Resume"
-    icon={{
-      name:"tabler:notes",
-      side: "right"
-    }}
-  /> &nbsp;
-    <Link
+      <Link
     href="mailto:t.canomorant@icloud.com"
     style="primary"
     text="Contact me"
@@ -118,12 +109,21 @@ import MainLayout from "../layouts/MainLayout.astro";
       side: "right"
     }}
   />&nbsp;
-    <Link
+  <Link
     href="https://www.linkedin.com/in/thomas-cano-morant/"
     style="primary"
     text="My LinkedIn profile"
     icon={{
       name:"cib:linkedin",
+      side: "right"
+    }}
+  />&nbsp;
+    <Link
+    href="/documents/Thomas_Cano_Morant_Resume_2023.pdf"
+    style="primary"
+    text="Download my Resume"
+    icon={{
+      name:"tabler:notes",
       side: "right"
     }}
   />

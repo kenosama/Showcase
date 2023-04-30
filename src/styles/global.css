@@ -551,6 +551,10 @@ button:focus-visible {
   max-width: var(--content-md);
 }
 
+/* Italic */
+.italic{
+  font-style: italic;
+}
 
 .post-container {
   margin-top: max(1.13rem, min(calc(0.8rem + 1.63vw), 2.06rem));

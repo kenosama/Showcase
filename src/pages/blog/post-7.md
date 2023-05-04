@@ -10,7 +10,7 @@ image: {
 description: So we are learning react, let's do a ToDo app
 draft: false
 category: WIP
-github: https://github.com/becodeorg/full-stack-react-intro-kenosama/settings
+github: https://github.com/becodeorg/full-stack-react-intro-kenosama
 ---
 ## The Todo app :)
 
@@ -26,8 +26,8 @@ For this moment, we have to make a ToDo app stored locally,
 
 On **the first day**, we have to understand the principle of Components and how to insert it into the App.
 
-I worked with Shared components, by that, i mean, i want to re-use my components if i need, so the InputForm is easily re-usable for a future project if needed.  you will find them into the Components/Shared Folder<br><br>
-# FormInput Component <br><br>
+I worked with Shared components, by that, i mean, i want to re-use my components if i need, so the InputForm is easily re-usable for a future project if needed.  you will find them into the Components/Shared Folder
+# FormInput Component 
 
 This is a **React** component that helps to create an input field or a textarea.
 <details>

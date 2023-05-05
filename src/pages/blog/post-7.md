@@ -16,6 +16,8 @@ github: https://github.com/becodeorg/full-stack-react-intro-kenosama
 
 # First thing First
 
+a live version is visible [HERE](https://kenosama-react-todo.netlify.app/)
+
 We had an assignment to make a todo app in react, for Becode...
 
 My girlfriend saw the app and wanted one for herself... and with color choices specific for her. i'm not responsible for the girly theme.

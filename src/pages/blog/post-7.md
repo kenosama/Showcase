@@ -9,7 +9,7 @@ image: {
 }
 description: So we are learning react, let's do a ToDo app
 draft: false
-category: WIP
+category: Fullstack
 github: https://github.com/becodeorg/full-stack-react-intro-kenosama
 ---
 ## The Todo app :)

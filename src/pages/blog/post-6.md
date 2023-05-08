@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/BlogPostLayout.astro"
-title: Portfolio with Astro
+title: Astro Portfolio
 date: 2023-04-27
 author: Thomas Cano Morant
 image: {

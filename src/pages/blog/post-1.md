@@ -1,13 +1,13 @@
 ---
 layout: "../../layouts/BlogPostLayout.astro"
-title: The Agency - Laravel and Beyond
+title: The Agency - Laravel
 date: 2023-04-19
 author: Thomas Cano Morant
 image: {
   src: "/images/the_agency.jpg",
   alt: "Website of the Agency",
 }
-description: A Laravel Project using multiple tables. 
+description: A Laravel Project using multiples related tables. 
 draft: false
 category: Laravel
 github: https://github.com/kenosama/Laravel-and-beyond

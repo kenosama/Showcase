@@ -15,7 +15,7 @@ github: https://github.com/kenosama/Puntopia
 # Puntopia
 
 <a href="https://puntopia.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/Live%20version-Here-blue.svg" alt="Live version Here">
+    <img src="https://img.shields.io/badge/Live%20version-Here-blue.svg" alt="Live version Here" style="height: 20px; width: 100px;">
 </a>
 
 Puntopia is an open-source community sharing tool designed to discover, create, and share funny puns!
